@@ -1,0 +1,208 @@
+.hoveredButton:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+.hoveredButton {
+  transition: 200ms;
+  background-color: white;
+}
+.hoveredButton button {
+  background: none;
+  color: inherit;
+  border: none;
+
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.detail-screen-slider-container {
+  padding-bottom: 15px;
+}
+
+.detail-screen-content-container {
+  padding-bottom: 15px;
+}
+.detail-screen-comments-container {
+  padding-bottom: 15px;
+}
+
+.divListMap {
+  min-height: 135px;
+}
+
+.div-detail-map {
+}
+
+.detail-screen-container {
+  background-color: var(--rs-gray-100);
+}
+
+.progress-bar {
+  background-color: var(--rs-red-500);
+}
+
+.overloaded-text {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.big-rate-text {
+  font-size: 48px;
+  line-height: 0.8;
+}
+
+.detail-screen-content-body img {
+  width: 100%;
+}
+
+.right-tab {
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.roomContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.roomContainerInModal {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.roomContainerInModal {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.roomImage {
+  grid-area: 1 / 1 / 2 / 2;
+  max-height: 300px;
+}
+
+.roomImage img {
+  max-height: 300px;
+}
+.roomBody {
+  grid-area: 1 / 3 / 2 / 4;
+  padding: 5px;
+  overflow-y: scroll;
+}
+.roomFeatures {
+  grid-area: 1 / 4 / 2 / 5;
+  padding: 5px;
+}
+
+.roomOptions {
+  grid-area: 1 / 2 / 2 / 3;
+  padding: 5px;
+}
+
+.comment-card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  border-bottom: 1px solid #cecece;
+}
+
+.comment-card {
+  border: 0;
+}
+
+.comment-widgets .comment-row:hover {
+  background: rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+}
+
+.comment-widgets .comment-row {
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  padding: 15px 0px;
+}
+.comment-text:hover {
+  visibility: hidden;
+}
+.comment-text:hover {
+  visibility: visible;
+}
+
+.comment-card .label {
+  padding: 3px 10px;
+  line-height: 13px;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 4px;
+  font-size: 75%;
+}
+
+.comment-footer {
+  font-size: 12px;
+}
+
+.comment-card .round img {
+  border-radius: 100%;
+}
+
+.comment-card .label-info {
+  background-color: #1976d2;
+}
+
+.comment-card .label-success {
+  background-color: green;
+}
+
+.comment-card .label-danger {
+  background-color: #ef5350;
+}
+
+.comment-card .action-icons a {
+  padding-left: 7px;
+  vertical-align: middle;
+  color: #99abb4;
+}
+
+.comment-card .action-icons a:hover {
+  color: #1976d2;
+}
+
+.comment-card .mt-100 {
+  margin-top: 100px;
+}
+
+.comment-card .mb-100 {
+  margin-bottom: 100px;
+}
+.detail-screen-comments-container {
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .roomContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .roomImage {
+    max-height: 300px;
+  }
+  .roomBody {
+    padding: 10px;
+  }
+  .roomFeatures {
+    padding: 10px;
+  }
+
+  .roomOptions {
+    grid-area: 2 / 1 / 3 / 2;
+    padding: 10px;
+  }
+}

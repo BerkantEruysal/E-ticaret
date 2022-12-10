@@ -1,0 +1,49 @@
+.profile-header-screen-wrapper {
+  height: 250px;
+  background-color: #cecece;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.profile-header-detail-container {
+  margin-top: -40px;
+  background-color: #fff;
+}
+
+.profile-header-detail-body {
+  padding: 24px 0;
+}
+
+
+.profile-header-detail-body .row {
+  height: 100%;
+}
+
+.profile-avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-avatar-container img {
+  max-height: 120px;
+}
+
+.profile-name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.profile-email {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 10px;
+}
+
+.profile-navbar-body {}
+
+.profile-navbar-body a {
+  padding: 10px 10px 10px 0px;
+}

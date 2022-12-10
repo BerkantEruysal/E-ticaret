@@ -1,0 +1,127 @@
+.nav-option:hover {
+  background-color: rgb(223, 223, 223);
+}
+
+.nav-option-signin {
+  background-color: black;
+  color: white;
+}
+
+.nav-option-signin:hover {
+  color: white;
+  background-color: rgb(68, 68, 68);
+}
+
+.nav-input {
+  border: 0px;
+}
+
+.nav-input:focus {
+  outline: none;
+}
+
+.nav-search-active {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.search-bar-hideable-wrapper {
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+.backdrop {
+  position: fixed;
+  background-color: rgba(170, 170, 170, 0.4);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.nav-search-wrapper-active {
+  border-bottom: 1px solid rgb(102, 102, 102);
+  width: 95%;
+}
+
+.reset-button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.left-arrow {
+  position: absolute;
+  left: 20px;
+}
+
+.search-suggestion:hover {
+  background-color: rgb(224, 224, 224);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-search-wrapper {
+    border: 1px solid rgb(155, 155, 155);
+    width: 95%;
+  }
+
+  .nav-search-active {
+    position: absolute;
+    top: 20px;
+    left: auto;
+    width: 450px;
+    /* Need a specific value to work */
+  }
+
+  .search-bar-hideable-wrapper {
+    height: auto;
+  }
+}
+
+.secondry-navbar-wrapper a {
+  font-size: 14px;
+  margin-right: 20px;
+  display: inline-flex;
+  margin-left: 7px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid transparent;
+}
+
+.secondry-navbar-wrapper a:hover,
+.secondry-navbar-wrapper a:focus {
+  text-decoration: none;
+}
+.secondry-navbar-wrapper a:not(.active):hover,
+.secondry-navbar-wrapper:not(.active) a:not(.active):focus {
+  text-decoration: none;
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--rs-gray-500) !important;
+}
+
+.secondry-navbar-container {
+  overflow: auto;
+  white-space: nowrap;
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color) !important;
+}
+
+.main-navbar-container {
+  font-size: 14px;
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--bs-border-color) !important;
+}
+
+.link-secondary.active {
+  --bs-text-opacity: 1;
+  --bs-border-opacity: 1;
+  border-bottom: var(--bs-border-width) var(--bs-border-style)
+    var(--rs-gray-900) !important;
+}

@@ -1,0 +1,16 @@
+.ContentGallery {
+
+}
+
+.ContentGallery .firstImage {
+  width:100%;
+  height: var(--cg-f-image);
+}
+.ContentGallery img:not(.firstImage) {
+  width:100%;
+  height: calc(var(--cg-f-image) / 2);
+}
+
+:root{
+  --cg-f-image:335px;
+}

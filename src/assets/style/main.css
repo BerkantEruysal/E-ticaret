@@ -1,0 +1,102 @@
+img,
+a {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.bg-body {
+  background-color: var(--rs-body) !important;
+}
+
+.m-h-200px {
+  max-height: 200px;
+}
+.m-h-600px {
+  max-height: 600px;
+}
+
+.datepicker-border {
+  margin-left: 8px;
+  border-left-width: 0;
+  box-shadow: -8px 0 0 #00aa6c;
+}
+
+.guests-select-border {
+  margin-left: 8px;
+  border-left-width: 0;
+  box-shadow: -8px 0 0 #f73;
+}
+
+.location-select-border {
+  margin-left: 8px;
+  border-left-width: 0;
+  box-shadow: -8px 0 0 #8c8c8c;
+}
+
+.location-select-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+}
+
+.breadcrumb-container {
+  background-color: var(--rs-body);
+}
+
+.breadcrumb-container a:hover {
+  text-decoration: none;
+}
+
+.breadcrumb-container a {
+  color: #6c757d !important;
+}
+
+.rs-ripple-pond {
+  display: none !important;
+}
+
+.rs-nav-tabs.rs-nav-horizontal .rs-nav-bar {
+  border: none !important;
+}
+
+.rs-btn {
+  line-height: 19px !important;
+}
+
+.shopping-cart-image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #1e3952 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1e3952;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
