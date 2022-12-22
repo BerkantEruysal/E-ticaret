@@ -14,6 +14,7 @@ import GoogleLogin from "react-google-login";
 import { gapi } from "gapi-script";
 import DynamicLink from "../DynamicLink";
 import PageTitle from "../components/PageTitle";
+import Logo from "../components/Logo";
 
 const model = Schema.Model({
   email: Schema.Types.StringType()
@@ -80,11 +81,7 @@ const LogInScreen = () => {
   PageTitle("Login");
   return (
     <div className="d-flex flex-column align-items-center  my-5 container justify-content-center">
-      <img
-        src={require("../assets/images/Logo.png")}
-        alt="logo"
-        style={{ width: 200, marginBottom: 30 }}
-      />
+      <Logo></Logo>
       <Form
         ref={formRef}
         model={model}

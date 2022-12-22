@@ -44,21 +44,21 @@ const MainScreen = () => {
 
   const blogList = [
     {
-      header: "Ski Equipmfggent Guide: Choosing The Right Gear For You",
+      header: "Ski Equipent Guide: Choosing The Right Gear For You ",
       summary:
         "Whether you’re new to the bunny hill or ready to tackle any terrain, having the right ski equipment keeps you safe while having fun on the slopes. We’ve put together this guide to help you choose the right skis and gear for your skill level.",
       buttonText: "Read the guide",
       image: require("../assets/images/mockupBg1.jpg"),
     },
     {
-      header: "Ski Equiphfsment Guide: Choosing The Right Gear For You",
+      header: "Ski Equipment Guide : Choosing The Right Gear For You",
       summary:
         "Whether you’re new to the bunny hill or ready to tackle any terrain, having the right ski equipment keeps you safe while having fun on the slopes. We’ve put together this guide to help you choose the right skis and gear for your skill level.",
       buttonText: "Read the guide",
       image: require("../assets/images/mockupBg1.jpg"),
     },
     {
-      header: "Ski Equisdfpment Guide: Choosing The Right Gear For You",
+      header: "Ski Equipment Guide: Choosing The Right Gear For You  ",
       summary:
         "Whether you’re new to the bunny hill or ready to tackle any terrain, having the right ski equipment keeps you safe while having fun on the slopes. We’ve put together this guide to help you choose the right skis and gear for your skill level.",
       buttonText: "Read the guide",

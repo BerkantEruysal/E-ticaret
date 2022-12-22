@@ -11,6 +11,7 @@ import EyeIcon from "@rsuite/icons/legacy/Eye";
 import EyeSlashIcon from "@rsuite/icons/legacy/EyeSlash";
 import DynamicLink from "../DynamicLink";
 import PageTitle from "../components/PageTitle";
+import Logo from "../components/Logo";
 
 const model = Schema.Model({
   firstName: Schema.Types.StringType().isRequired("This field is required"),
@@ -107,11 +108,7 @@ const SignInScreen = () => {
   PageTitle("Sign in");
   return (
     <div className="d-flex flex-column  my-5 container align-items-center">
-      <img
-        src={require("../assets/images/Logo.png")}
-        alt="logo"
-        style={{ width: 200, marginBottom: 30 }}
-      />
+      <Logo></Logo>
       <Form
         model={model}
         ref={formRef}

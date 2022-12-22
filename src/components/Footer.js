@@ -3,6 +3,7 @@ import "../assets/style/footer.css";
 import { Link } from "react-router-dom";
 import { GetResourceByValue, GetSettingByValue } from "./DynamicSelectors";
 import { Col, Row, Grid } from "rsuite";
+import Logo from "./Logo";
 
 //Her sayfanın altında bulunan, statik footer.
 const Footer = () => {
@@ -18,18 +19,14 @@ const Footer = () => {
                 lg={6}
                 className=" d-flex flex-column align-items-center align-items-lg-start "
               >
-                <img
-                  src={require("../assets/images/Logo.png")}
-                  alt="Logo"
-                  className="footer-logo mb-3"
-                />
+                <Logo></Logo>
                 <p className="small text-muted">
                   {GetResourceByValue("common.footer.slogan")}
                 </p>
                 <p className="small text-muted mb-0">
                   &copy; {GetResourceByValue("common.footer.copyrights")}{" "}
                   <a className="text-primary" href="#">
-                    skiturkish.com
+                    E-ticaret.com
                   </a>
                 </p>
               </Col>

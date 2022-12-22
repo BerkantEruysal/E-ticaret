@@ -11,10 +11,10 @@ import { logout } from "../../api/Authentication";
 import { changeDefaultLanguage, setCurrency } from "../../api/common";
 import { GetResourceByValue, GetSettingByValue } from "../DynamicSelectors";
 
-
 import DynamicLink from "../../DynamicLink";
 import { stateSetter } from "../../redux/modalSlice";
 import { setDefaultCurrency } from "../../redux/currencySlice";
+import Logo from "../Logo";
 
 //Sayfaların çoğunun inherit ettiği navbar.
 const NavBar = () => {
@@ -49,7 +49,6 @@ const NavBar = () => {
     return state.account.ShoppingCart.length;
   });
 
-
   return (
     <nav className="main-navbar-container navbar navbar-expand-md bg-light sticky-top">
       <div className="container-fluid container-lg">
@@ -64,11 +63,7 @@ const NavBar = () => {
         </button>
 
         <Link className="navbar-brand" to={DynamicLink("home-page")}>
-          <img
-            src={require("../../assets/images/Logo.png")}
-            alt="Logo"
-            style={{ width: 120 }}
-          />
+          <Logo></Logo>
         </Link>
         <SearchBar></SearchBar>
 
